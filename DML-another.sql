@@ -55,11 +55,15 @@ CREATE TABLE empresa(
 CREATE TABLE oportunidade(
 	cargo VARCHAR2(20),
 	requisitos VARCHAR2(500), 
+	id NUMBER(4),
 	
 	e-mail VARCHAR2(20),
 	
 	CONSTRAINT pk_oportunidade
 		PRIMARY KEY (cargo,e-mail),
+		
+	CONSTRAINT un_id
+		UNIQUE (id),
 		
 	CONSTRAINT fk_oportunidade
 		FOREIGN KEY (e-mail) REFERENCES empresa
