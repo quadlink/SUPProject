@@ -3,8 +3,9 @@ DROP TABLE perfil;
 CREATE TABLE perfil(
 	-- A alterar valores se necessario
 	e-mail VARCHAR2(20),
-	nome VARCHAR2(20) CONSTRAINT nn_aluno_nome NOT NULL,
-	passwd VARCHAR2(15) CONSTRAINT nn_aluno_passwd NOT NULL,
+	nome VARCHAR2(20) CONSTRAINT nn_perfil_nome NOT NULL,
+	passwd VARCHAR2(15) CONSTRAINT nn_perfil_passwd NOT NULL,	
+	morada VARCHAR2(30) CONSTRAINT nn_perfil_morada NOT NULL,
 
 	CONSTRAINT pk_perfil
 		PRIMARY KEY (e-mail)
@@ -13,6 +14,9 @@ CREATE TABLE perfil(
 CREATE TABLE aluno(
 	-- A alterar valores se necessario
 	e-mail VARCHAR2(20),
+	dataNascimento DATE CONSTRAINT nn_aluno_dataNascimento NOT NULL,
+	percursoProfissional VARCHAR2(500) CONSTRAINT nn_aluno_percursoProfissional NOT NULL,
+	dadosAdicionais VARCHAR2(500) CONSTRAINT nn_aluno_dadosAdicionais NOT NULL,
 	
 	percursoAcademico VARCHAR2(500) CONSTRAINT nn_aluno_percursoAcademico NOT NULL,
 	conhecimentosEcapacidades VARCHAR2(500) CONSTRAINT nn_aluno_conhecimentosEcapacidades NOT NULL,
@@ -29,6 +33,9 @@ CREATE TABLE aluno(
 CREATE TABLE empresa(
 	-- A alterar valores se necessario
 	e-mail VARCHAR2(20),
+	dataFormacao DATE CONSTRAINT nn_empresa_dataFormacao NOT NULL,
+	Setores VARCHAR2(500) CONSTRAINT nn_empresa_Setores NOT NULL,
+	dadosAdicionais VARCHAR2(500) CONSTRAINT nn_empresa_dadosAdicionais NOT NULL,
 	
 	website VARCHAR2(25) CONSTRAINT nn_empresa_website NOT NULL,
 	contacto NUMBER(9) CONSTRAINT nn_empresa_contacto NOT NULL,
