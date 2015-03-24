@@ -18,6 +18,8 @@ CREATE TABLE aluno(
 	percursoProfissional VARCHAR2(500) CONSTRAINT nn_aluno_percursoProfissional NOT NULL,
 	dadosAdicionais VARCHAR2(500) CONSTRAINT nn_aluno_dadosAdicionais NOT NULL,
 	
+	oportunidadePreferida VARCHAR2(500) CONSTRAINT nn_aluno_oportunidadePreferida NOT NULL,
+	
 	percursoAcademico VARCHAR2(500) CONSTRAINT nn_aluno_percursoAcademico NOT NULL,
 	conhecimentosEcapacidades VARCHAR2(500) CONSTRAINT nn_aluno_conhecimentosEcapacidades NOT NULL,
 
