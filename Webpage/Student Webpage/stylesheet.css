@@ -10,8 +10,6 @@
     width: 100%;
     left: 20px;
     text-align: left;
-
-
 }
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
   color: #5ef100;
@@ -89,4 +87,9 @@
 .icon-size
 {
     font-size: 87px;
+}
+
+#iden{
+  left: 65px;
+  padding-bottom: -15px; 
 }
