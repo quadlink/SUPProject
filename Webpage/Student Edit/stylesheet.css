@@ -119,7 +119,12 @@
 #entryExp{
 	visibility:hidden;
 }
-
+#rem-button{
+  border: none;
+}
+.bottom-entry{
+	text-align:center;
+}
 
 
 
