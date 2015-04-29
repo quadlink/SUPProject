@@ -126,7 +126,7 @@
 						<h1>Academical Course <small> <button class="btn btn-default" onclick='toggler(entryA,buttonA)'> <span class="glyphicon glyphicon-edit"></button> </small> </h1>							
 							</div>
 							<input type="text" id="entryA"/>
-							<input id="buttonA" type='button' onclick='addEntryAcademical()' value='Submit'/>
+							<input id="buttonA" type='button' onclick='addEntryAcademical();clearText(entryA)' value='Submit'/>
 							<ul id="academical"></ul>							
 					</div>
 					</div>
@@ -136,7 +136,7 @@
 						<h1>Experience <small> <button class="btn btn-default" onclick='toggler(entryExp,buttonExp)'><span class="glyphicon glyphicon-edit"></button> </small></h1>
 							</div>
 							<input type="text" id="entryExp"/>
-							<input id = "buttonExp" type='button' onclick='addEntryExperience()' value='Submit'/>
+							<input id = "buttonExp" type='button' onclick='addEntryExperience();clearText(entryExp)' value='Submit'/>
 							<ul id="experience"></ul>	
 						</div>	
 					</div>
@@ -148,7 +148,7 @@
 							<h1>Skills, Knowledge & Languages <small> <button type="submit" onclick='toggler(entryS,buttonS)' class="btn btn-default"><span class="glyphicon glyphicon-edit"></button> </small> </h1>
 							</div>
 							<input type="text" id="entryS"/>
-							<input id="buttonS" type='button' onclick='addEntrySkills()' value='Submit'/>
+							<input id="buttonS" type='button' onclick='addEntrySkills();clearText(entryS)' value='Submit'/>
 							<ul id="skills"></ul>									
 						</div>
 						</div>
@@ -158,7 +158,7 @@
 						<h1>Preferences <small> <button type="submit" onclick='toggler(entryPref,buttonPref)' class="btn btn-default"><span class="glyphicon glyphicon-edit"></button> </small> </h1>
 							</div>
 							<input type="text" id="entryPref"/>
-							<input id="buttonPref" type='button' onclick='addEntryPref()' value='Submit'/>
+							<input id="buttonPref" type='button' onclick='addEntryPref();clearText(entryPref)' value='Submit'/>
 							<ul id="preferences"></ul>	
 					</div>			
 				</div>
@@ -170,11 +170,11 @@
 					<h1 class="bottom-entry">Personal Description <small> <button type="submit" onclick='toggler(entryPer,buttonPer)' class="btn btn-default"><span class="glyphicon glyphicon-edit"></button> </small> </h1>
 							</div>
 							<input type="text" id="entryPer"/>
-							<input id="buttonPer" type='button' onclick='addEntryPersonal()' value='Submit'/>
+							<input id="buttonPer" type='button' onclick='addEntryPersonal();clearText(entryPer)' value='Submit'/>
 							<ul id="personal"></ul>	
 						</div>
+					</div>
+				</div>
 			</div>
-		</div>
-		</div>
-	</body>
-</html>
+		</body>
+	</html>

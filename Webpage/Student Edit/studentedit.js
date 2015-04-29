@@ -66,3 +66,7 @@ if((entry.style.visibility == "visible") && (button.style.visibility=="visible")
 function removeEntry(entryId) {
 	entryId.remove();
 }
+
+function clearText(box){
+	box.value = '';
+}
