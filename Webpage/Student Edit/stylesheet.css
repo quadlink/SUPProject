@@ -89,6 +89,42 @@
     font-size: 87px;
 }
 
-#iden{
-  
+#buttonA{
+	visibility:hidden;
 }
+#buttonS{
+	visibility:hidden;
+}
+#buttonExp{
+	visibility:hidden;
+}
+#buttonPref{
+	visibility:hidden;
+}
+#buttonPer{
+	visibility:hidden;
+}
+#entryA{
+	visibility:hidden;
+}
+#entryS{
+	visibility:hidden;
+}
+#entryPref{
+	visibility:hidden;
+}
+#entryPer{
+	visibility:hidden;
+}
+#entryExp{
+	visibility:hidden;
+}
+
+
+
+
+
+
+
+
+
