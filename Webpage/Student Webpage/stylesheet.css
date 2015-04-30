@@ -89,6 +89,14 @@
     font-size: 87px;
 }
 
-#iden{
-  
+.bottom-entry{
+	text-align:center;
+}
+
+.main-info{
+	height:150px;
+}
+.pic-holder{
+	height:204px;
+	width:204px;
 }
