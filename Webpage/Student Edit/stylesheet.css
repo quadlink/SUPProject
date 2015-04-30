@@ -119,13 +119,20 @@
 #entryExp{
 	visibility:hidden;
 }
-#rem-button{
+.nob-button{
   border: none;
 }
 .bottom-entry{
 	text-align:center;
 }
 
+.main-info{
+	height:150px;
+}
+.pic-holder{
+	height:150px;
+	width:150px;
+}
 
 
 

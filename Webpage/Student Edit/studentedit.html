@@ -109,72 +109,79 @@
 
 
 		<div class="container-fluid">							
-				<div class="row-fluid">
-					<div class="col-lg-1 col-md-2">
+					<div class="col-lg-1 col-md-2 pic-holder">
 						<img src="chocobo.jpg" alt="kweh kweh" class="img-rounded" height="150px" width="150px">
 					</div>
-						<div class="col-lg-6 col-md-6" id="iden">
-							<h2>Name</h2>
-							<h2>Birthdate</h2>
-							<h2>Address</h2>
+						<div class="col-lg-11 col-md-10">
+							<div class="list-group">
+								<a href="#" class="list-group-item active">
+									<h2 class="list-group-item-heading">Nome na Base de dados</h2>
+								</a>
+								<a href="#" class="list-group-item">
+									<h3 class="list-group-item-text">Data de nascimento na base de dados</h3>
+								</a>
+								<a href="#" class="list-group-item">
+									<h3 class ="list-group-item-text"> Morada na Base de Dados </h3>			
+								</a>
+							</div>
 						</div>
 				</div>
-				<div class="row-fluid">
+				<div class="container-fluid">	
 					<div class="col-lg-6 col-md-6">
 					<div class="panel panel-default">
 						<div class="panel-heading">
-						<h1>Academical Course <small> <button class="btn btn-default" onclick='toggler(entryA,buttonA)'> <span class="glyphicon glyphicon-edit"></button> </small> </h1>							
+						<h2>Academical Course <small> <button class="btn btn-default" onclick='toggler(entryA,buttonA)'> <span class="glyphicon glyphicon-edit"></button> </small> </h2>							
 							</div>
 							<input type="text" id="entryA"/>
-							<input id="buttonA" type='button' onclick='addEntryAcademical();clearText(entryA)' value='Submit'/>
+							<button id="buttonA" onclick='addEntryAcademical();clearText(entryA)' class="btn btn-default nob-button"> <span class="glyphicon glyphicon-ok-circle"/> </button>
 							<ul id="academical"></ul>							
 					</div>
-					</div>
+				</div>		
 					<div class="col-lg-6 col-md-6">
 						<div class="panel panel-default">
 						<div class="panel-heading">
-						<h1>Experience <small> <button class="btn btn-default" onclick='toggler(entryExp,buttonExp)'><span class="glyphicon glyphicon-edit"></button> </small></h1>
+						<h2>Experience <small> <button class="btn btn-default" onclick='toggler(entryExp,buttonExp)'><span class="glyphicon glyphicon-edit"></button> </small></h2>
 							</div>
 							<input type="text" id="entryExp"/>
-							<input id = "buttonExp" type='button' onclick='addEntryExperience();clearText(entryExp)' value='Submit'/>
+							<button id = "buttonExp" onclick='addEntryExperience();clearText(entryExp)' class="btn btn-default nob-button"> <span class="glyphicon glyphicon-ok-circle"/> </button>
 							<ul id="experience"></ul>	
 						</div>	
 					</div>
-					</div>
-					<div class="row-fluid">
+				</div>
+
+				<div class="container-fluid">					
 						<div class="col-lg-6 col-md-6">
 						<div class="panel panel-default">
 							<div class="panel-heading">
-							<h1>Skills, Knowledge & Languages <small> <button type="submit" onclick='toggler(entryS,buttonS)' class="btn btn-default"><span class="glyphicon glyphicon-edit"></button> </small> </h1>
+							<h2>Skills, Knowledge & Languages <small> <button type="submit" onclick='toggler(entryS,buttonS)' class="btn btn-default"><span class="glyphicon glyphicon-edit"></button> </small> </h2>
 							</div>
 							<input type="text" id="entryS"/>
-							<input id="buttonS" type='button' onclick='addEntrySkills();clearText(entryS)' value='Submit'/>
+							<button id="buttonS" onclick='addEntrySkills();clearText(entryS)' class="btn btn-default nob-button"> <span class="glyphicon glyphicon-ok-circle"/> </button>
 							<ul id="skills"></ul>									
 						</div>
 						</div>
 					<div class="col-lg-6 col-md-6">
 					<div class="panel panel-default">
 						<div class="panel-heading">
-						<h1>Preferences <small> <button type="submit" onclick='toggler(entryPref,buttonPref)' class="btn btn-default"><span class="glyphicon glyphicon-edit"></button> </small> </h1>
+						<h2>Preferences <small> <button type="submit" onclick='toggler(entryPref,buttonPref)' class="btn btn-default"><span class="glyphicon glyphicon-edit"></button> </small> </h2>
 							</div>
 							<input type="text" id="entryPref"/>
-							<input id="buttonPref" type='button' onclick='addEntryPref();clearText(entryPref)' value='Submit'/>
+							<button id="buttonPref" onclick='addEntryPref();clearText(entryPref)' class="btn btn-default nob-button"> <span class="glyphicon glyphicon-ok-circle"/> </button>
 							<ul id="preferences"></ul>	
 					</div>			
 				</div>
-				</div>
-				<div class="row-fluid">
+				
+				
 				<div class="col-lg-12 col-md-12">
 				<div class="panel panel-default">
 					<div class="panel-heading">
-					<h1 class="bottom-entry">Personal Description <small> <button type="submit" onclick='toggler(entryPer,buttonPer)' class="btn btn-default"><span class="glyphicon glyphicon-edit"></button> </small> </h1>
+					<h2 class="bottom-entry">Personal Description <small> <button type="submit" onclick='toggler(entryPer,buttonPer)' class="btn btn-default"><span class="glyphicon glyphicon-edit"></button> </small> </h2>
 							</div>
 							<input type="text" id="entryPer"/>
-							<input id="buttonPer" type='button' onclick='addEntryPersonal();clearText(entryPer)' value='Submit'/>
+							<button id="buttonPer" onclick='addEntryPersonal();clearText(entryPer)' class="btn btn-default nob-button">  <span class="glyphicon glyphicon-ok-circle"/> </button>
 							<ul id="personal"></ul>	
 						</div>
-					</div>
-				</div>
+					</div>			
 			</div>
 		</body>
 	</html>

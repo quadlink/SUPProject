@@ -12,7 +12,7 @@ function addEntryAcademical() {
 	var text = document.getElementById("entryA");
 	var list = document.getElementById("academical");
 	if(text.value.length>3){
-	list.innerHTML += "<li id='acadEntry"+acadNum+"'>" +text.value+ " <button type='button' class='btn btn-default' id='rem-button' onclick='removeEntry(acadEntry"+acadNum+")'><span class='glyphicon glyphicon-remove'></span></button> </li>";
+	list.innerHTML += "<li id='acadEntry"+acadNum+"'>" +text.value+ " <button type='button' class='btn btn-default nob-button' onclick='removeEntry(acadEntry"+acadNum+")'><span class='glyphicon glyphicon-remove'></span></button> </li>";
 	}
 }
 
@@ -21,7 +21,7 @@ function addEntrySkills() {
 	var text = document.getElementById("entryS");
 	var list = document.getElementById("skills");
 	if(text.value.length>3){
-	list.innerHTML += "<li id='skillEntry"+skillNum+"'>" +text.value+ " <button type='button' class='btn btn-default' id='rem-button' onclick='removeEntry(skillEntry"+skillNum+")'><span class='glyphicon glyphicon-remove'></span></button> </li>";
+	list.innerHTML += "<li id='skillEntry"+skillNum+"'>" +text.value+ " <button type='button' class='btn btn-default nob-button' onclick='removeEntry(skillEntry"+skillNum+")'><span class='glyphicon glyphicon-remove'></span></button> </li>";
 	}
 }
 
@@ -30,7 +30,7 @@ function addEntryPref(){
 	var text = document.getElementById("entryPref");
 	var list = document.getElementById("preferences");
 	if(text.value.length>3){
-    list.innerHTML += "<li id='prefEntry"+prefNum+"'>" +text.value+ " <button type='button' class='btn btn-default' id='rem-button' onclick='removeEntry(prefEntry"+prefNum+")'><span class='glyphicon glyphicon-remove'></span></button> </li>";
+    list.innerHTML += "<li id='prefEntry"+prefNum+"'>" +text.value+ " <button type='button' class='btn btn-default nob-button' onclick='removeEntry(prefEntry"+prefNum+")'><span class='glyphicon glyphicon-remove'></span></button> </li>";
 	}
 }
 
@@ -39,7 +39,7 @@ function addEntryPersonal(){
 	var text = document.getElementById("entryPer");
 	var list = document.getElementById("personal");
 	if(text.value.length>3){
-    list.innerHTML += "<li id='perEntry"+perNum+"'>" +text.value+ " <button type='button' class='btn btn-default' id='rem-button' onclick='removeEntry(perEntry"+perNum+")'><span class='glyphicon glyphicon-remove'></span></button> </li>";
+    list.innerHTML += "<li id='perEntry"+perNum+"'>" +text.value+ " <button type='button' class='btn btn-default nob-button' onclick='removeEntry(perEntry"+perNum+")'><span class='glyphicon glyphicon-remove'></span></button> </li>";
 	}
 }
 
@@ -48,7 +48,7 @@ function addEntryExperience(){
 	var text = document.getElementById("entryExp");
 	var list = document.getElementById("experience");
 	if(text.value.length>3){
-	list.innerHTML += "<li id='expEntry"+expNum+"'>" +text.value+ " <button type='button' class='btn btn-default' id='rem-button' onclick='removeEntry(expEntry"+expNum+")'><span class='glyphicon glyphicon-remove'></span></button> </li>";
+	list.innerHTML += "<li id='expEntry"+expNum+"'>" +text.value+ " <button type='button' class='btn btn-default nob-button' onclick='removeEntry(expEntry"+expNum+")'><span class='glyphicon glyphicon-remove'></span></button> </li>";
 	}
 }
 
